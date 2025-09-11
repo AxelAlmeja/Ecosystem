@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('fondodefinitivo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.con1 {
+    background: rgba(193, 215, 192, 0.15);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(193, 215, 192, 0.18);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 350px;
+    max-width: 90%;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+.con2 {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.con2 input {
+    width: calc(100% - 40px);
+    padding: 12px 15px 12px 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.con2 input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.con2 input:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.con2 .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1em;
+    pointer-events: none;
+}
+
+.con2 .password-toggle {
+    left: auto;
+    right: 15px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.con3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+.con3 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.con3 input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: rgb(160, 208, 155);
+}
+
+.con3 .forgot-password {
+    color: rgb(160, 208, 155);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.con3 .forgot-password:hover {
+    color: rgb(193, 215, 192);
+    text-decoration: underline;
+}
+
+.con4 {
+    width: 100%;
+    padding: 18px 0;
+    background: rgb(160, 208, 155);
+    border: none;
+    border-radius: 8px;
+    color: rgb(29, 79, 29);
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.con4:hover {
+    background: rgb(193, 215, 192);
+    color: rgb(58, 96, 58);
+    text-decoration: none;
+}
+
+.con5 {
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+.con5 a {
+    color: rgb(160, 208, 155);
+    text-decoration: none;
+    font-weight: 600;
+    transition: text-decoration 0.3s ease;
+}
+
+.con5 a:hover {
+    text-decoration: underline;
+}
