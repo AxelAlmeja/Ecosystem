@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Donación para el Ecosistema</title>
   <link rel="stylesheet" href="CSS/comunidad.css">
+  <script src="JS/comunidad.js" defer></script>
 </head>
 <body>
   <main class="contenedor">
@@ -29,22 +30,49 @@
       </p>
     </section>
 
+    <section class="seccion-alterna generador-ideas">
+      <h2>Generador de Ideas Verdes</h2>
+      <p>¡Comparte tus ideas para hacer de nuestro plantel un lugar más ecológico!</p>
+
+      <form id="formulario-ideas">
+        <label for="idea-texto">Tu idea:</label>
+        <textarea id="idea-texto" rows="5" placeholder="Escribe tu propuesta aquí..." required></textarea>
+        <button type="submit">Enviar idea</button>
+      </form>
+
+      <div class="lista-ideas">
+        <h3>Ideas de la comunidad:</h3>
+        <ul id="lista-ideas-guardadas"></ul>
+        <p id="contador-ideas">Total de ideas: 0</p>
+      </div>
+
+      <button id="borrar-ideas-btn" class="btn-borrar" title="Borrar todas las ideas">🗑️</button>
+      <p id="mensaje-feedback" class="oculto"></p>
+    </section>
+
     <section class="dias">
       <h2>Días importantes en junio</h2>
+      <div class="contenedor-tarjetas">
+        <div class="tarjeta">
+          <a href="https://www.un.org/es/observances/environment-day" target="_blank">
+            <img src="IMG/medioambiente.jpg" alt="Día del Medio Ambiente">
+            <p><strong>5 de junio:</strong> Día Mundial del Medio Ambiente</p>
+          </a>
+        </div>
 
-      <div class="tarjeta">
-        <img src="IMG/medioambiente.jpg" alt="Día del Medio Ambiente">
-        <p><strong>5 de junio:</strong> Día Mundial del Medio Ambiente</p>
-      </div>
+        <div class="tarjeta">
+          <a href="https://www.un.org/es/observances/oceans-day" target="_blank">
+            <img src="IMG/oceanos.jpg" alt="Día de los Océanos">
+            <p><strong>8 de junio:</strong> Día Mundial de los Océanos</p>
+          </a>
+        </div>
 
-      <div class="tarjeta">
-        <img src="IMG/oceanos.jpg" alt="Día de los Océanos">
-        <p><strong>8 de junio:</strong> Día Mundial de los Océanos</p>
-      </div>
-
-      <div class="tarjeta">
-        <img src="IMG/junio.png" alt="Día contra la Desertificación">
-        <p><strong>17 de junio:</strong> Día Mundial contra la Desertificación y la Sequía</p>
+        <div class="tarjeta">
+          <a href="https://www.un.org/es/observances/desertification-day" target="_blank">
+            <img src="IMG/junio.png" alt="Día contra la Desertificación">
+            <p><strong>17 de junio:</strong> Día Mundial contra la Desertificación y la Sequía</p>
+          </a>
+        </div>
       </div>
     </section>
   </main>
