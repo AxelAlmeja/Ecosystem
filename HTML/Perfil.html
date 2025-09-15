@@ -1,67 +1,42 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE HTML>
+<HTML lang="ES">
+
+    <link rel="stylesheet" href="Perfil_Usuario.css">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="CSS/perfil.css">
+<title>Perfil Usuario(1.0)</title>
+<meta charset="utf-8">
+<meta name="author" content="Bravo Garcia Moises">
+<meta name="description" content="Proyecto Ecosystem 1.0">
+<meta name="keywords" content="documento, estructura, HTML5">    
 </head>
 <body>
-    <div id="contenedor-formulario">
-        <h2>Regístrate</h2>
-        <form id="formulario-perfil">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required>
 
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" required>
+      <div class="Formulario">
+    <h2>Formulario</h2>
+    <form autocomplete="off">
+  <input type="text" id="nombre" placeholder="Nombre" autocomplete="off">
+  <input type="email" id="correo" placeholder="Correo" autocomplete="off">
+  <input type="password" id="contraseña" placeholder="Contraseña" autocomplete="new-password" >
+  <input type="number" id="numero" placeholder="Número" autocomplete="off">
+  <input type="file" id="foto" accept="image/*">
+  <button onclick="guardarPerfil()">Guardar Perfil</button>
+  <button onclick="borrarPerfil()" style="background:#dc3545;">Borrar Perfil</button>
+</form>
+</div>
 
-            <label for="carrera">Carrera:</label>
-            <select id="carrera" required>
-                <option value="">Selecciona tu carrera</option>
-                <option value="Programación">Programación</option>
-                <option value="Admin. Empresas">Admin. Empresas</option>
-                <option value="Puericultura">Puericultura</option>
-                <option value="Contabilidad">Contabilidad</option>
-                <option value="Ofimática">Ofimática</option>
-                <option value="Servicios de hospedaje">Servicios de hospedaje</option>
-            </select>
+  
+  <div class="profile-container" id="perfilGuardado">
+    <h2>Perfil Guardado</h2>
+    <img id="fotoPerfil" src="" alt="Foto de perfil">
+    <p><strong>Nombre:</strong>  <span id="mostrarNombre"></p>
+    <p><strong>Correo:</strong> <span id="mostrarCorreo"></span></p>
+    <p><strong>Numero:</strong> <span id="mostrarNumero"></span></p>
+  </div>
 
-            <label>Turno:</label>
-            <div style="text-align:left; margin-bottom:10px;">
-                <input type="radio" id="matutino" name="turno" value="Matutino" required>
-                <label for="matutino" style="display:inline;">Matutino</label>
-                <input type="radio" id="vespertino" name="turno" value="Vespertino" required>
-                <label for="vespertino" style="display:inline;">Vespertino</label>
-            </div>
+  
 
-            <label for="grupo">Grupo:</label>
-            <select id="grupo" required>
-                <option value="">Selecciona tu grupo</option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-            </select>
 
-            <label for="imagen">Foto de perfil:</label>
-            <input type="file" id="imagen" accept="image/*">
-
-            <button type="submit">Guardar</button>
-        </form>
-    </div>
-
-    <div id="contenedor-perfil" style="display: none;">
-        <div class="tarjeta-perfil">
-            <img id="foto-perfil" src="" alt="Foto de perfil">
-            <h3 id="nombre-perfil"></h3>
-            <p id="correo-perfil"></p>
-            <p><strong>Carrera:</strong> <span id="carrera-perfil"></span></p>
-            <p><strong>Turno:</strong> <span id="turno-perfil"></span></p>
-            <p><strong>Grupo:</strong> <span id="grupo-perfil"></span></p>
-            <button class="boton-editar">Editar</button>
-        </div>
-    </div>
-
-    <script src="JS/perfil.js"></script>
+  <script src="Perfil_Usuario.js"></script>
 </body>
-</html>
+</HTML>
