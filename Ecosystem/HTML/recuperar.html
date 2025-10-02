@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="CSS/inisecion.css">
+    <style>
+        .con1 {
+            padding: 50px;
+        }
+        .con2 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="contenido">
+    <div class="con1">
+        <h2>Recuperar Contraseña</h2>
+        <form id="recoverForm">
+            <p style="color: rgb(34, 85, 34); margin-bottom: 25px;">
+                Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.
+            </p>
+            <div class="con2">
+                <input type="email" id="email" placeholder="Correo Electrónico" required>
+            </div>
+            <button type="submit" class="con4">Enviar Enlace</button>
+        </form>
+        <div class="con5">
+            <a href="inisecion.html">Volver a Iniciar Sesión</a>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById('recoverForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        alert('Se ha enviado un enlace de recuperación a: ' + email + ' (Simulación)');
+        window.location.href = 'inisecion.html';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asignación de Especialidades - Junio</title>
+  <link rel="stylesheet" href="CSS/record.css">
+  <script src="JS/record.js" defer></script>
+</head>
+<body>
+
+  <header class="encabezado">
+    <nav class="menu">
+      <ul class="lista-menu">
+        <li><a href="portada.html">Inicio</a></li>
+        <li><a href="comunidad.html">Comunidad</a></li>
+        <li><a href="record.html">Record</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="inisecion.html">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="contenido-record">
+
+    <h1>Asignación de días de riego - Junio</h1>
+
+    <div class="contenedor-asignaciones" id="contenedorAsignaciones"></div>
+
+
+    <h1 style="margin-top: 50px;">Recolección de Tapas</h1>
+    
+    <div class="contenedor-estadisticas">
+      <h2>Estadísticas de Recolección</h2>
+      <div class="estadisticas-resumen">
+        <div class="stat-box">
+          <h3>Total de Tapas Recolectadas</h3>
+          <p id="totalTapas">0</p>
+        </div>
+        <div class="stat-box">
+          <h3>Peso Estimado (kg)</h3>
+          <p id="totalKilos">0.00 kg</p>
+        </div>
+      </div>
+      
+      <h2 style="margin-top: 30px;">Top Recolectores (Especialidad / Grupo / Turno)</h2>
+      <div class="contenedor-ranking">
+          <ol id="listaMejoresRecolectores"></ol>
+      </div>
+    </div>
+
+    <div class="contenedor-asignaciones">
+      <form id="formTapas">
+        <label for="especialidad">Especialidad:</label>
+        <select id="especialidad" required>
+          <option value="">Selecciona una opción</option>
+          <option value="Programación">Programación</option>
+          <option value="Puericultura">Puericultura</option>
+          <option value="Administración de Empresas">Administración de Empresas</option>
+          <option value="Servicios de Hospedaje">Servicios de Hospedaje</option>
+          <option value="Electrónica">Electrónica</option>
+          <option value="Contabilidad">Contabilidad</option>
+        </select>
+
+        <label for="grupo">Grupo:</label>
+        <select id="grupo" required>
+          <option value="">Selecciona un grupo</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+
+        <label for="turno">Turno:</label>
+        <select id="turno" required>
+          <option value="">Selecciona un turno</option>
+          <option value="Matutino">Matutino</option>
+          <option value="Vespertino">Vespertino</option>
+        </select>
+        
+        <label for="cantidad">Cantidad de Tapas:</label>
+        <input type="number" id="cantidad" placeholder="Número de tapas" required min="1">
+
+        <button type="submit">Registrar Recolección</button>
+      </form>
+      
+      <div id="resultadoRegistro"></div>
+    </div>
+
+  </main>
+</body>
+</html>
