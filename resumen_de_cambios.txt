@@ -1,0 +1,21 @@
+RESUMEN DE CAMBIOS Y MEJORAS EN EL CÓDIGO (CSS/COMUNIDAD)
+1. SECCIONES MODIFICADAS Y ORGANIZADAS:
+   - Variables de Raíz: Centralización de colores principales, acento y peligro.
+   - Estilos Generales: Configuración de body, fondo e imagen fija.
+   - Encabezado y Menú: Estilización de la navegación y efectos hover.
+   - Estructura de Contenedores: Mejora en cajas de información y efectos de desenfoque (blur).
+
+2. SECCIONES DE FUNCIONALIDADES (MEJORADAS):
+   - Gestión de Ideas: Estilos para formulario, lista de ideas, contador de votos y feedback.
+   - Reporte de Tapas: Diseño de contadores destacados y secciones de reporte.
+   - Multimedia: Formulario de imágenes, descripción y rejilla de galería (grid).
+   - Componentes Interactivos: Tarjetas de días, avisos de comunidad y filtros.
+
+3. AGREGADOS Y AJUSTES TÉCNICOS:
+   - Botones de Acción: Estilización específica para el botón de "Borrar Ideas" (color de peligro).
+   - Carruseles: Configuración de scroll-snap para carrusel de días y efectos de transición para la galería principal.
+   - Comentarios de Sección: Implementación de divisores claros para facilitar el mantenimiento futuro.
+
+4. LIMPIEZA:
+   - Eliminación de comentarios redundantes o basura.
+   - Normalización de selectores y propiedades redundantes.
